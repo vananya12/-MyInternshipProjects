@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - MotionCut</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* CSS for the vertical form layout */
+        #contactForm label {
+            display: block; /* Display labels as blocks to stack them vertically */
+        }
+
+        #contactForm input[type="text"],
+        #contactForm input[type="email"],
+        #contactForm textarea {
+            width: 100%; /* Make input fields and textarea full width */
+            margin-bottom: 10px; /* Add some spacing between elements */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact MotionCut</h1>
+        <p>Your Ideas, Our Expertise.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Address: 123 Mahanagar, Lucknow</p>
+            <p>Phone: +91 9120xxxx</p>
+            <p>Email: contact@motioncut.com</p>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 MotionCut
+    </footer>
+    <script>
+        // JavaScript for form validation
+        const contactForm = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        
+        contactForm.addEventListener('submit', (event) => {
+            if (!isNameValid(nameInput.value) || !isEmailValid(emailInput.value)) {
+                event.preventDefault();
+                alert('Please enter a valid name and email.');
+            }
+        });
+        
+        function isNameValid(name) {
+            return /^[a-zA-Z\s]*$/.test(name); // Only letters and spaces allowed
+        }
+        
+        function isEmailValid(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Basic email format validation
+        }
+    </script>
+</body>
+</html>

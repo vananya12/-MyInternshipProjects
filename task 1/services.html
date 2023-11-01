@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services and Products - MotionCut</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services and Products</h1>
+        <p>Creating Engaging Videos and Digital Content.</p>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Video Production</h2>
+            <p class="service-description">Create stunning videos for your brand or events.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Digital Media Solutions</h2>
+            <p class="service-description">Optimize your online presence with our digital media services.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Video Editors</h2>
+            <p class="service-description">Craft and edit video content to perfection.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Motion Graphics Artists</h2>
+            <p class="service-description">Add dynamic visual elements to your videos.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Cinematographers</h2>
+            <p class="service-description">Capture your moments with cinematic excellence.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Graphic Designers</h2>
+            <p class="service-description">Design graphics for your branding and content needs.</p>
+            <p class "service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Web Developers</h2>
+            <p class="service-description">Build and maintain websites for a strong online presence.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+        <section>
+            <h2>Canva Designing</h2>
+            <p class="service-description">Create stunning Canva designs for your social media and branding.</p>
+            <p class="service-price">Contact us for pricing.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 MotionCut
+    </footer>
+    <script>
+        // JavaScript to show service details and prices on hover
+        const serviceSections = document.querySelectorAll("section");
+
+        serviceSections.forEach(section => {
+            section.addEventListener("mouseover", () => {
+                section.querySelector(".service-description").style.display = "block";
+                section.querySelector(".service-price").style.display = "block";
+            });
+
+            section.addEventListener("mouseout", () => {
+                section.querySelector(".service-description").style.display = "none";
+                section.querySelector(".service-price").style.display = "none";
+            });
+        });
+    </script>
+</body>
+</html>
