@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.featured-slider {
+    /* Add your styles for the featured slider */
+}
+
+.latest-articles article {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    margin-top: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#load-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#load-more {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for the About page */
+body.about {
+    background: linear-gradient(90deg, #3b5998, #55acee, #dd4b39, #0077b5, #25d366);
+    color: white;
+}
+
+.about section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.about h2 {
+    color: #ffcc00;
+}
+
+.about p {
+    color: #ccc;
+}
+
+/* Styles for the Article page */
+body.article {
+    overflow: hidden;
+}
+
+.article header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+.article main {
+    padding: 20px;
+    background: linear-gradient(45deg, #FFC107, #FF5722, #9C27B0, #2196F3, #4CAF50);
+    animation: colorChange 10s infinite linear;
+}
+
+.article article {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.article-content {
+    margin-top: 15px;
+    color: white;
+}
+
+@keyframes colorChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
