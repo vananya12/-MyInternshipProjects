@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <style>
+	
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #87CEEB, #FFA07A);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+            border: 5px solid #fff; /* White border around the images */
+            transition: border 0.3s, filter 0.3s;
+        }
+
+        .gallery img:hover {
+            border: 5px solid #87CEEB; /* Light blue border on hover */
+            filter: brightness(1.2); /* Increase brightness on hover */
+        }
+    </style>
+</head>
+<body>
+	<b><u><center><h1>&#x26A1Photo Gallery  &#x1F604</h1>
+	<h2>&#x1F64F WELCOME TO INDIAN CULTURE &#x1F64F</h2></center></u></b>
+
+<div class="gallery">
+    <img src="img1.jpg" alt="Image 1" data-fancybox="gallery" />
+    <img src="img2.jpg" alt="Image 2" data-fancybox="gallery" />
+    <img src="img3.jpg" alt="Image 3" data-fancybox="gallery" />
+    <img src="img4.jpg" alt="Image 4" data-fancybox="gallery" />
+    <img src="img5.jpg" alt="Image 5" data-fancybox="gallery" />
+    <img src="img6.jpg" alt="Image 6" data-fancybox="gallery" />
+    <img src="img7.jpg" alt="Image 7" data-fancybox="gallery" />
+    <img src="img8.jpg" alt="Image 8" data-fancybox="gallery" />
+    <img src="img9.jpg" alt="Image 9" data-fancybox="gallery" />
+    <img src="img10.jpg" alt="Image 10" data-fancybox="gallery" />
+    <img src="img11.jpg" alt="Image 11" data-fancybox="gallery" />
+    <img src="img12.jpg" alt="Image 12" data-fancybox="gallery" />
+    <img src="img13.jpg" alt="Image 13" data-fancybox="gallery" />
+    <img src="img14.jpg" alt="Image 14" data-fancybox="gallery" />
+    <img src="img15.jpg" alt="Image 15" data-fancybox="gallery" />
+    <img src="img16.jpg" alt="Image 16" data-fancybox="gallery" />
+    <img src="img17.jpg" alt="Image 17" data-fancybox="gallery" />
+    <img src="img18.jpg" alt="Image 18" data-fancybox="gallery" />
+    <img src="img19.jpg" alt="Image 19" data-fancybox="gallery" />
+
+    <!-- Include the Fancybox library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- Initialize Fancybox -->
+    <script>
+        $(document).ready(function () {
+            $('[data-fancybox="gallery"]').fancybox({
+                thumbs: {
+                    autoStart: true,
+                    axis: 'x',
+                },
+                loop: true,
+                transitionEffect: "circular",
+		maxWidth: 10%,
+            });
+        });
+    </script>
+</div>
+
+</body>
+</html>
